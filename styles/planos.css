@@ -1,0 +1,260 @@
+#planos {
+  color: white;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 12rem;
+
+  
+  & h2 {
+    display: flex;
+    font: var(--title-sm);
+    max-width: 19rem;
+    margin: auto;
+    text-align: center;
+  }
+
+  & .cards {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    padding: 10rem;
+    width: 55rem;
+    margin: auto;
+
+    
+    & svg path {
+      fill: var(--pink-base);
+    }
+    
+    
+    & svg:nth-child(1) {
+      left: -1.5rem;
+      top: 13rem;
+      width: 1.6rem;
+      height: 1.6rem;
+      rotate: -8deg;
+    }
+    & svg:nth-child(2) {
+      left: -1.8rem;
+      top: 15.5rem;
+      width: .8rem;
+      height: .8rem;
+      rotate: -8deg;
+    }
+    
+    
+    
+    & svg:nth-child(3) {
+      right: 1.5rem;
+      bottom: 5rem;
+      width: 1.4rem;
+      height: 1.4rem;
+      rotate: 8deg;
+    }
+    & svg:nth-child(4) {
+      right: 4rem;
+      bottom: 5rem;
+      width: .68rem;
+      height: .68rem;
+      rotate: 8deg;;
+    }
+    
+    
+    
+    
+    & .card {
+      border: 1px solid green;
+      padding: 1.4rem 2rem 1.75rem;
+      max-width: 18rem;
+      background-color: var(--shape-base);
+      border: 1px solid var(--shape-stroke);
+      border-radius: 1.5rem;
+      min-height: 26rem;
+      transform: translateX(0) translateY(0);
+      transition: transform .4s ease;
+      z-index: 1;
+
+      & img {
+        position: absolute;
+        top: -3.3rem;
+        
+      }
+
+      & header {
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: .87rem;
+        align-items: center;
+
+        & span {
+          font: var(--title-xl);
+          color: var(--pink-light);
+        }
+
+        & div {
+          width: 5.6rem;
+          height: 1.87rem;
+          font: var(--tag);
+          color: var(--text-body);
+          text-transform: uppercase; 
+          background-color: var(--shape-stroke);
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          border-radius: 62rem;
+        }
+
+      }
+
+      & price {
+        display: block;
+        font: var(--title-md);
+        color: var(--text-title);  
+        margin-bottom: .5rem;
+           
+
+        & small {
+          font: 700 1rem var(--ff-raleway);
+        }
+      }
+
+      & .value {
+        font: 400 var(--body-sm);
+        color: var(--text-label);
+        margin-bottom: 4.37rem;
+      }
+
+      & .beneficios {
+        
+        & ul {
+          margin-bottom: 1.5rem;
+          font: 400 .75rem var(--ff-raleway);
+          display: flex;
+          flex-direction: column;
+          gap: .75rem;
+          
+          & li {
+            display: flex;
+            align-items: center;
+            gap: .5rem;
+          }
+        }
+
+        & svg {
+          width: .87rem;
+          height: .87rem;
+          
+          & path {
+            fill: var(--pink-base);
+          }
+        }
+
+        & .buttom {
+          font: var(--buttom);
+          display: flex;
+          justify-content: center;
+        }
+
+      }
+
+      & .buttom {
+        padding-block: .75rem;
+        border-radius: .5rem;
+        background-color: var(--pink-dark);
+        color: var(--text-title);
+      }
+
+      &:hover {
+        transform: scale(1.02);
+        transition: transform.3s ease-in-out;
+        background-color: var(--shape-hover);
+        z-index: 1;
+      }
+    }
+
+
+    & .card:nth-child(6) {
+      left: 2rem;
+      bottom: 7rem;
+      rotate: -8deg;
+      z-index: 0;
+
+      & svg {
+        & path {
+          fill: var(--blue-base);
+        }
+      }
+
+      & header {
+        & span {
+          color: var(--blue-light);
+        }
+        & div {
+          width: 5.6rem;
+          height: 1.87rem;
+          background-color: inherit;
+        }
+
+      }
+      & .value {
+        margin-bottom: 6.18rem;
+      }
+
+      & .buttom {
+        background-color: var(--blue-dark);
+      }
+      
+      &:hover {
+        transform: scale(1.02);
+        transition: transform.3s ease-in-out;
+        background-color: var(--shape-hover);
+        z-index: 1;
+      }
+    }
+
+
+    & .card:nth-child(7) {
+      right: 2rem;
+      bottom: 7rem;
+      rotate: 8deg;
+      z-index: 0;
+
+      & svg {
+        & path {
+          fill: var(--blue-base);
+        }
+      }
+
+      & header {
+        & span {
+          color: var(--blue-light);
+        }
+        & div {
+          width: 5.6rem;
+          height: 1.87rem;
+          background-color: inherit;  
+        }
+
+      }
+      & .value {
+        margin-bottom: 2.5rem;
+      }
+
+      & .buttom {
+        background-color: var(--blue-dark);
+      }
+
+      &:hover {
+        transform: scale(1.02);
+        transition: transform.3s ease-in-out;
+        background-color: var(--shape-hover);
+        z-index: 1;
+      }
+
+    }
+    
+
+
+  }
+
+}

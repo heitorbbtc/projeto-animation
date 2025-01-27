@@ -1,0 +1,91 @@
+#hero {
+  display: flex;
+  flex-direction: column;
+  min-height: 46rem;
+  max-width: 80rem;
+  margin: auto;
+  background: url(../assets/images/hero-background.png) center / cover no-repeat ;
+  background-position: bottom;
+
+  & header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 3.5rem 10rem 10rem;
+
+    & div {
+      display: flex;
+      width: 5.5rem;
+      height: 2.5rem;
+      background-color: var(--pink-dark);
+      justify-content: center;
+      align-items: center;
+      border-radius: .5rem;
+      z-index: 1;
+      overflow: hidden;
+      position: relative;
+      
+      
+      & a {
+        z-index: 1;
+      }
+
+
+      &::before {
+        content: '';
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        width: 0;
+        height: 0;
+        background: var(--pink-light); /* Cor de destino */
+        border-radius: 50%;
+        transition: width 1s ease, height 1s ease;
+        transform: translate(-50%, -50%);
+        z-index: 1;
+      }
+      
+      &:hover::before {
+        width: 10rem;
+        height: 10rem;
+      }
+        
+      &:hover {
+        z-index: 0;
+      
+      }
+    }
+
+
+  }
+
+  & .subtitle {
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+    margin-inline: auto;
+    margin-bottom: 29rem;
+
+    & h1 {
+      font: var(--title-lg);
+      color: var(--text-title);
+      max-width: 40rem;
+      margin: auto;
+      text-align: center;
+
+    }
+  
+    & p {
+      font: 400 var(--body-lg);
+      color: var(--text-body);  
+      max-width: 35rem;
+      margin: auto;
+      text-align: center;
+    }
+  }
+
+
+  
+
+
+}

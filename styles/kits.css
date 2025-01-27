@@ -1,0 +1,176 @@
+#kits {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+
+  & header {
+    justify-content: center;
+    margin: auto;
+  }
+
+  & .title {
+    display: flex;
+    gap: 1rem;
+    
+    & h2 {
+      font: var(--title-sm);
+      color: var(--text-title);
+    }
+
+    img {
+      width: 2rem;
+      height: 2rem;
+    }
+
+    & svg path {
+      fill: var(--pink-base);
+    }
+  }
+
+  & p {
+    font: 400 var(--body-md);
+    color: var(--text-body);
+    text-align: center;
+    margin-bottom: 13rem;
+
+  }
+
+  & .books {
+    display: flex;
+    height: 40rem;
+    width: 80rem;
+    margin: auto;
+    position: relative;
+    margin-bottom: 16rem;
+
+    & img:nth-child(1) {
+      height: 38.5rem;
+      left: calc(50% - 15.5rem);
+      z-index: 0;
+    }
+
+    & img:nth-child(2) {
+      height: 33rem;
+      left: 40%;
+      top: 2rem;
+      z-index: -1;
+      transform: translateX(0) rotate(0deg); /* Estado inicial */
+      transition: transform 1s ease, top 1s ease; /* Retorno suave ao estado inicial */
+      
+    }
+    & img:nth-child(3) {
+      height: 33rem;
+      left: 40%;
+      top: 2rem;
+      z-index: -2;
+      transform: translateX(0) rotate(0deg); /* Estado inicial */
+      transition: transform 1s ease, top 1s ease; /* Retorno suave ao estado inicial */
+
+    }
+    & img:nth-child(4) {
+      width: 13.8rem;
+      height: 15.8rem;
+      right: 50.5%;
+      bottom: 1rem;
+      z-index: -1;
+      transform: translateX(0) rotate(0deg); /* Estado inicial */
+      transition: transform 1s ease, top 1s ease; /* Retorno suave ao estado inicial */
+    }
+    & img:nth-child(5) {
+      width: 11rem;
+      height: 2rem;
+      top: 3rem;
+      left: 40%;
+      z-index: -1;
+      transform: translateX(0) rotate(0deg); /* Estado inicial */
+      transition: transform 1s ease, top 1s ease; /* Retorno suave ao estado inicial */
+    }
+    & img:nth-child(6) {
+      width: 5.5rem;
+      height: 8rem;
+      bottom: 11.5rem;
+      left: 50%;
+      z-index: -1;
+      transform: translateX(0) rotate(0deg); /* Estado inicial */
+      transition: transform 1s ease, top 1s ease; /* Retorno suave ao estado inicial */
+    }
+    & img:nth-child(7) {
+      width: 9.5rem;
+      height: 9.4rem;
+      left: 50%;
+      bottom: 13rem;
+      z-index: -1;
+      transform: translateX(0) rotate(0deg); /* Estado inicial */
+      transition: transform 1s ease, top 1s ease; /* Retorno suave ao estado inicial */
+    }
+
+    & p {
+      font: 400 var(--body-md);
+      color: var(--text-title);
+
+      &:nth-child(8) {
+        top: 4rem;
+        left: 50%;
+        z-index: -1;
+        transform: translateX(0) rotate(0deg); /* Estado inicial */
+        transition: transform 1s ease, top 1s ease; /* Retorno suave ao estado inicial */
+      }
+  
+      &:nth-child(9) {
+        bottom: 8rem;
+        left: 50%;
+        z-index: -1;
+        transform: translateX(0) rotate(0deg); /* Estado inicial */
+        transition: transform 1s ease, top 1s ease; /* Retorno suave ao estado inicial */
+      }
+      
+      &:nth-child(10) {
+        left: 50%;
+        bottom: -9rem;
+        z-index: -1;
+        transform: translateX(0) rotate(0deg); /* Estado inicial */
+        transition: transform 1s ease, top 1s ease; /* Retorno suave ao estado inicial */
+      }
+
+    }
+
+  &:hover {
+    & img:nth-child(2) {
+      transform: translateY(-25%) translateX(140%) rotate(12deg); /* Estado final no hover */
+    }
+
+    & img:nth-child(3) {
+      transform: translateX(200%) rotate(22deg); /* Estado final no hover */
+    }
+
+    & img:nth-child(4) {
+      transform: translateY(30%) translateX(-73%) rotate(-8deg); /* Estado final no hover */
+    }
+
+    & img:nth-child(5) {
+      transform: translateY(-200%) translateX(-153%) rotate(-8deg); /* Estado final no hover */
+    }
+
+    & img:nth-child(6) {
+      transform: translateY(30%) translateX(-500%) rotate(-8deg); /* Estado final no hover */
+    }
+  
+    & img:nth-child(7) {
+      transform: translateY(170%) translateX(180%) rotate(-8deg); /* Estado final no hover */
+    }
+
+    & p:nth-child(8) {
+      transform: translateY(-500%) translateX(-330%); /* Estado final no hover */
+    }
+
+    & p:nth-child(9) {
+      transform: translateY(200%) translateX(-375%); /* Estado final no hover */
+    }
+
+    & p:nth-child(10) {
+      transform: translateY(770%) translateX(120%); /* Estado final no hover */
+    }
+  }
+  } 
+}
+
