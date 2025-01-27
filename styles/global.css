@@ -7,9 +7,10 @@
 
 body {
   background-color: var(--shape-background);
-  margin-inline: auto;
 }
-
+html {
+  margin: auto;
+}
 :root {
   --pink-light: #C59DD2;
   --pink-base: #9547A5;
